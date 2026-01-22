@@ -1,0 +1,54 @@
+body {
+  background: radial-gradient(circle,#111,#000);
+  color:#fff;
+  font-family:Arial;
+  text-align:center;
+}
+
+.card {
+  width:380px;
+  margin:30px auto;
+  padding:20px;
+  background:#1c1c1c;
+  border-radius:15px;
+  box-shadow:0 0 40px gold;
+}
+
+input,select,button {
+  width:100%;
+  margin:6px 0;
+  padding:10px;
+  border-radius:8px;
+  font-size:16px;
+  border:none;
+}
+
+button {
+  background:gold;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.slots {
+  display:flex;
+  justify-content:space-between;
+  margin:15px 0;
+}
+
+.reel {
+  width:90px;
+  height:90px;
+  background:black;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.symbol {
+  font-size:42px;
+  line-height:90px;
+  transition:transform 1.2s ease;
+}
+
+.symbol.spin {
+  transform: translateY(-400px);
+}
