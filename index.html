@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<title>QIZIL DOK KAZINO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+<h1>AKO DOK KAZINO 🎰</h1>
+
+<div>Balans: <b><span id="balance">0</span> AZN</b></div>
+
+<input id="codeInput" placeholder="Generator kodunu daxil et">
+<button onclick="loadBalance()">Balansı yüklə</button>
+
+<hr>
+
+<select id="bet"></select>
+
+<div class="slots">
+  <div class="reel"><div class="symbol">🍒</div></div>
+  <div class="reel"><div class="symbol">🍋</div></div>
+  <div class="reel"><div class="symbol">💎</div></div>
+</div>
+
+<button onclick="spin()">SPIN</button>
+
+<div id="msg"></div>
+</div>
+
+<audio id="spinSound" src="spin.mp3"></audio>
+<audio id="winSound" src="win.mp3"></audio>
+
+<script src="slot.js"></script>
+</body>
+</html>
